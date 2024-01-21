@@ -1,0 +1,23 @@
+#id_username_helptext{
+    display: none;
+}
+
+body{
+    /* background-color: #edb1f1; */
+    text-align: center;
+    padding-top: 80px;
+}
+#register{
+    border: 1px solid black;
+}
+h1{
+    color: red;
+}
+
+#sub{
+    font-size: larger;
+}
+
+.errorlist{
+    color: aqua;
+}

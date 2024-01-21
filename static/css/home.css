@@ -1,0 +1,64 @@
+#body{
+    margin: 5%;
+    background-color: #fcd77f;
+}
+#movie{
+    background-color:#dbedf3;
+}
+
+@keyframes rotate{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+#head{
+    color: #e8630a;
+    display: inline-block;
+    animation: rotate 5s linear infinite;
+    background:#edb1f1;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0px;
+    background-image: url(../img/img1.jpg);
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: inset 0 5px 3px 0;
+}
+
+#blog{
+    text-align: center;
+}
+/* button{
+    color: #e8630a;
+    background-color:#dbedf3;
+} */
+#btn{
+    color: #e8630a;
+    background:#fcd77f;
+    border: 0px solid white;
+    font-size: large;
+    text-decoration: none;
+}
+#btn1{
+    color: #e8630a;
+    background-color:#dbedf3;
+}
+
+#login{
+    padding-left: 800px;
+    color: #e8630a;
+}
+#image{
+    height: 40%;
+    width: 100%;
+}
+
+/* #logout{
+    background-color: aqua;
+} */

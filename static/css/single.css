@@ -1,0 +1,108 @@
+body{
+    margin: 5%;
+    background-color: #f3d989d5;
+}
+
+.head{
+    text-align: center;
+    color: #ff2e4c;
+}
+.para{
+    font-size: large;
+    background-color:#d1e9ea;
+    color: #740021;
+}
+#date{
+    text-align: center;
+    font-weight: bolder;
+}
+@keyframes rotate{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+#title{
+    display: inline-block;
+    animation: rotate 5s linear infinite;
+    background:#edb1f1;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0px;
+    background-image: url(../img/img1.jpg);
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: inset 0 5px 3px 0;
+}
+
+#image{
+    height: 40%;
+    width: 100%;
+}
+button{
+    font-size: larger;
+    background-color:white;
+    font-weight: bolder;
+}
+#cmt{
+    text-align: center;
+    border: 0px solid black;
+    color: #283149;
+    background-color:#f6f6f6;
+}
+#cmt1{
+    text-align: center;
+    border: 1px solid #740021;
+    background-color: #d1e9ea;
+}
+#comment{
+    text-align: center;
+    border: 1px solid #e8630a;
+    background-color:white;
+    font-weight: bolder;
+}
+#commentform{
+    text-align: center;
+    border: 1px solid #e8630a;
+    background-color: white;
+    font-weight: bolder;
+}
+#cmtform{
+    text-align: center;
+    color: #740021;
+}
+
+#post-btn{
+    font-size: larger;
+    color: #e8630a;
+    background-color: #edf798;
+    font-weight: bolder;
+}
+
+#label{
+    display: none;
+}
+
+#id_comment{
+    text-align: center;
+}
+
+#id_comment::placeholder{
+    color: #e8630a;
+    padding-top: 60px;
+}
+
+
+#id_user::placeholder{
+    color: #e8630a;
+}
+
+
+#id_user_rating::placeholder{
+    color: #e8630a;
+}

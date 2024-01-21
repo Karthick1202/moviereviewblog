@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/register.css'%}">
+    <style>
+        body{
+            text-align: center;
+            padding-top: 140px;
+            margin-left: 25%;
+            margin-right: 25%;
+            background: white;
+            /* background-image: url(""); */
+
+            background-repeat: no-repeat;
+            /* height: 100%;
+            width: 70%; */
+            background-position: center;
+            background-size: cover;
+            /* background-size: 70% 200%;
+            background-position: center center; */
+            
+        }
+        h1{
+            color: black;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+        #sub{
+            font-size: large;
+            color: white;
+            background-color: blue;
+            padding-left: 10%;
+            padding-right: 10%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+        label{
+            font-size: large;
+        }
+        #register{
+            border: 1px solid black;
+            background: #ebc1ee;
+        }
+        .errorlist{
+            color: rgba(255, 0, 0, 0.473);
+            
+        }
+        /* #img{
+            display: flex;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <img src="{% static 'img/img1.jpg' %}" alt="" id="img"> -->
+    <div id="register">
+    <h1>Sign Up</h1>
+    <form action="" method="post">
+        {%csrf_token%}
+        {{form.as_p}}
+        <button type="submit" id="sub">Sign Up</button><br><br>
+    </form>
+    </div>
+    </body>
+</html>

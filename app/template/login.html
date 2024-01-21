@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <style>
+        body{
+            background: white;
+        }
+        #login{
+            margin-top: 10%;
+            margin-right: 30%;
+            margin-left:30%;
+        }
+        #head{
+            margin-top: 7%;
+            color: black;
+            font-size: larger;
+        }
+        #sub{
+            margin-bottom: 5%;
+            background: blue;
+            color: white;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="login">
+    <h1 id="head">Login to your account</h1><br>
+    <form action="" method="post">
+        {%csrf_token%}
+        {{form.as_p}}
+        <br>
+        <button type="submit" id="sub">Sign in</button>
+    </form>
+    </div>
+</body>
+</html>
